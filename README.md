@@ -1,7 +1,9 @@
 # computer-vision-projects
 Computer Vision projects completed during my CV course (Grade: 20/20), covering image processing, feature detection, segmentation, object detection, and deep learning. Includes clean implementations, visual results, and performance evaluation demonstrating strong practical and theoretical understanding.
 
-# Image Processing Fundamentals & Video Noise Analysis
+# 01_image_processing_fundamentals
+
+## Image Processing Fundamentals & Video Noise Analysis
 
 This project covers foundational concepts in computer vision and image processing, implemented using Python and OpenCV. The objective was to explore color models, contrast analysis, histogram processing, spatial filtering, edge detection, and basic video processing.
 
@@ -92,6 +94,52 @@ Compared gradient-based vs multi-stage edge detection approaches.
 - Edge detection algorithms
 - Frame-wise video processing
 - Analytical comparison of filtering methods
+
+---
+
+## Tools Used
+
+- Python
+- OpenCV
+- NumPy
+- Matplotlib
+
+# 02_captcha_generation_and_processing
+
+## CAPTCHA Generation and Image Processing
+
+This project focuses on the generation and analysis of CAPTCHA images using Python-based image processing techniques. The objective was to simulate real-world CAPTCHA systems and explore how noise, distortion, and visual transformations affect text readability and automated recognition.
+
+---
+
+## Project Overview
+
+- Programmatically generated CAPTCHA images with random text
+- Applied image distortions and transformations
+- Introduced controlled noise patterns
+- Performed preprocessing techniques to enhance readability
+- Analyzed the impact of filtering and thresholding methods
+
+---
+
+## Technical Concepts Covered
+
+- Image rendering and text overlay
+- Noise modeling and augmentation
+- Geometric distortions
+- Thresholding and binarization
+- Morphological operations
+- Preprocessing pipelines for OCR readiness
+
+---
+
+## Skills Demonstrated
+
+- Synthetic dataset generation
+- Practical noise simulation
+- Image preprocessing design
+- Understanding of robustness in vision systems
+- Clean implementation of processing pipelines
 
 ---
 
