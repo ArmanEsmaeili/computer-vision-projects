@@ -143,6 +143,52 @@ This project focuses on the generation and analysis of CAPTCHA images using Pyth
 
 ---
 
+# 03_Pretrained_CV_Models
+
+## Project Overview
+This project focuses on the **practical use of pre-trained models in computer vision**. The main goal is to understand how pre-trained models can be applied to different computer vision tasks without additional training.  
+
+The project covers three main tasks:  
+1. **Image Classification** – Predicting the class of input images.  
+2. **Object Detection** – Detecting and localizing objects within images.  
+3. **Semantic Segmentation** – Generating pixel-level masks to segment images based on object categories.  
+
+All tasks are applied on a variety of input images including urban scenes, nature, and other real-world scenarios.
+
+---
+
+## Project Steps
+
+### 1. Image Classification
+- Load a pre-trained model in inference mode.  
+- Predict the class for each input image and output the **top class with confidence score**.  
+- Analyze which predictions are correct and where the model fails.  
+- Understand how pre-trained models generalize to unseen images.
+
+### 2. Object Detection
+- Complete the provided code to draw **bounding boxes** on detected objects.  
+- Display **class names and confidence scores** on the image.  
+- Analyze the detection results for accuracy and potential errors.
+
+### 3. Semantic Segmentation
+- Apply a pre-trained segmentation model to generate **color-coded masks** based on the VOC color palette.  
+- Overlay the mask on the original image to visualize segmentation.  
+- Measure and analyze the proportion of each mask over the original image to evaluate performance.
+
+---
+
+## Key Objectives
+- Learn how to **load and use pre-trained model weights** without training from scratch.  
+- Evaluate model performance across classification, detection, and segmentation tasks.  
+- Understand the limitations and strengths of pre-trained models in real-world applications.  
+
+---
+
+## Technologies and Libraries
+- **Python**  
+- Deep learning frameworks: **PyTorch** or **TensorFlow**  
+- **OpenCV** for image processing  
+- **Matplotlib** for visualization
 ## Tools Used
 
 - Python
