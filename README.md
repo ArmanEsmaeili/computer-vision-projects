@@ -196,7 +196,7 @@ All tasks are applied on a variety of input images including urban scenes, natur
 - NumPy
 - Matplotlib
 
-- # 03_FashionMNIST_Classification
+# 04_CV_NeuralNet_Classification
 
 ## Project Overview
 This project focuses on designing, training, and evaluating a **multi-class neural network** using **PyTorch** on the **Fashion-MNIST dataset**. The aim is to understand the full workflow of a neural network, including:
