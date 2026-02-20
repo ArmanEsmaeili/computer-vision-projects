@@ -274,3 +274,59 @@ The Fashion-MNIST dataset contains **60,000 training images** and **10,000 test 
 - Learn to preprocess and flatten image data for neural networks  
 - Train and evaluate a neural network with **PyTorch**  
 - Explore methods to improve model performance (Dropout, BatchNorm, learning rate tuning)
+
+# Final_CV_Generative_Project
+
+## Project Overview
+This is the **final project** in the Computer Vision series, focusing on **generative neural network models** for **image translation and reconstruction**. The project demonstrates how deep learning architectures can generate or restore images from a different domain or style while preserving key structure and content.
+
+Key generative architectures explored:  
+- **Autoencoders (AE)** – compress and reconstruct images  
+- **Variational Autoencoders (VAE)** – probabilistic latent representations for image generation  
+- **Generative Adversarial Networks (GAN)** – adversarial training to generate realistic images  
+
+Applications include **image denoising, domain translation, anomaly detection, and image restoration**.
+
+---
+
+## Project Steps
+
+### 1. Data Loading and Preprocessing
+- Load or download datasets from Kaggle or other sources  
+- Apply preprocessing and augmentation as needed  
+
+### 2. Model Implementation
+- Implement **AE** or **VAE** with Encoder, Bottleneck, and Decoder  
+- Optionally implement **GAN** with Generator and Discriminator for adversarial training  
+
+### 3. Training
+- Train the models for image reconstruction or translation  
+- Monitor training loss and optionally track evaluation metrics  
+
+### 4. Evaluation
+- Evaluate results **qualitatively** and **quantitatively** using:  
+  - **MSE** – Mean Squared Error  
+  - **MAE** – Mean Absolute Error  
+  - **PSNR** – Peak Signal-to-Noise Ratio  
+  - **SSIM** – Structural Similarity Index  
+
+### 5. Optional Improvements
+- Experiment with latent space dimensions, architecture variations, and hyperparameters  
+- Compare AE vs VAE vs GAN performance  
+- Apply data augmentation or domain translation techniques  
+
+---
+
+## Technologies and Libraries
+- **Python**  
+- **PyTorch** or **TensorFlow**  
+- **NumPy** for data processing  
+- **Matplotlib / OpenCV** for visualization  
+
+---
+
+## Key Learning Outcomes
+- Hands-on experience with **generative neural networks** for image tasks  
+- Understanding differences between **AE, VAE, and GAN architectures**  
+- Evaluating models using **both visual inspection and quantitative metrics**  
+- Practical knowledge in **image translation, reconstruction, and generation**
