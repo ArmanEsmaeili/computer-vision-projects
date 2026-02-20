@@ -195,3 +195,82 @@ All tasks are applied on a variety of input images including urban scenes, natur
 - OpenCV
 - NumPy
 - Matplotlib
+
+- # 03_FashionMNIST_Classification
+
+## Project Overview
+This project focuses on designing, training, and evaluating a **multi-class neural network** using **PyTorch** on the **Fashion-MNIST dataset**. The aim is to understand the full workflow of a neural network, including:
+
+- Loading and preprocessing image data  
+- Building a multi-layer neural network  
+- Training and evaluating the model  
+- Analyzing results and improving performance  
+
+The Fashion-MNIST dataset contains **60,000 training images** and **10,000 test images**, each **28x28 grayscale**, belonging to **10 clothing categories**, including t-shirts, coats, shoes, boots, bags, and more.
+
+---
+
+## Project Steps
+
+### 1. Data Loading and Exploration
+- Load Fashion-MNIST using `torchvision.datasets.FashionMNIST`.  
+- Display sample images with labels to understand dataset structure.  
+- Flatten each image to 1D vectors (28x28 → 784) for input to the network.  
+- Examine batch shapes and understand why flattening is necessary for fully connected layers.
+
+### 2. Model Design
+- Build a **multi-layer fully connected neural network** as a subclass of `nn.Module`:  
+  - Input layer: 784 → 256, **ReLU activation**  
+  - Hidden layer: 256 → 128, **ReLU activation**  
+  - Output layer: 128 → 10, raw outputs (logits)  
+- Print model structure and total parameters.  
+- Understand the role of each layer and how parameters contribute to learning.
+
+### 3. Loss Function and Optimizer
+- Use **CrossEntropyLoss** for multi-class classification.  
+- Use **Adam optimizer** with learning rate `0.001`.  
+- Brief explanation: CrossEntropyLoss is suitable for multi-class tasks as it combines softmax and negative log-likelihood in one step.
+
+### 4. Training the Model
+- Implement the full training loop:  
+  - Set model to `train()` mode  
+  - Forward pass through batches  
+  - Compute loss, perform `backward()`  
+  - Update weights using optimizer  
+  - Track loss and accuracy per epoch  
+- Recommended epochs: 10+  
+- Print accuracy after each epoch for monitoring.
+
+### 5. Model Evaluation
+- Switch model to `eval()` mode for testing.  
+- Compute accuracy on test dataset.  
+- Display some predicted images with actual labels.  
+- Analyze misclassified examples to understand model weaknesses.
+
+### 6. Visualization
+- Plot **loss vs. epochs**  
+- Plot **accuracy vs. epochs**  
+- Analyze potential overfitting or underfitting trends.
+
+### 7. Optional Model Improvements
+- Add **Dropout** to reduce overfitting  
+- Add **Batch Normalization** for faster convergence  
+- Experiment with learning rates, optimizer types, or number of neurons  
+- Compare results to the base model and analyze improvements
+
+---
+
+## Technologies and Libraries
+- **Python**  
+- **PyTorch** for neural network modeling  
+- **Torchvision** for dataset loading  
+- **NumPy** for array operations  
+- **Matplotlib** for visualization  
+
+---
+
+## Key Objectives
+- Understand the workflow of building a **multi-class classification neural network**  
+- Learn to preprocess and flatten image data for neural networks  
+- Train and evaluate a neural network with **PyTorch**  
+- Explore methods to improve model performance (Dropout, BatchNorm, learning rate tuning)
